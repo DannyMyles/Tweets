@@ -1,6 +1,5 @@
 
-import Button from 'react-bootstrap/Button';
-const BlogList = ({blogs,handleDelete }) => {
+const BlogList = ({blogs}) => {
 
   return (
     <div className="blog-list">
@@ -9,7 +8,6 @@ const BlogList = ({blogs,handleDelete }) => {
         <div className='blog-preview' key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by: {blog.author}</p>
-          <Button variant='outline-danger' onClick={()=>handleDelete(blog.id)}>delete</Button>
         </div>
         ))
       }

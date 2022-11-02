@@ -17,15 +17,9 @@ const Home = () => {
       })
   }, []);
 
-
-  //Deleting a blog from the list
-  const handleDelete =(id)=>{
-    const newBlogs = blogs.filter(blog =>blog.id !== id);
-    setblogs(newBlogs);
-  }
   return (
      <>
-     <BlogList  blogs={blogs} handleDelete={handleDelete}/>
+     <BlogList  blogs={blogs}/>
      </>
 
   )
