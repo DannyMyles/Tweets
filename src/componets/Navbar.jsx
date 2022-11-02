@@ -1,7 +1,8 @@
 
 const Navbar = () => {
   return (
-    <nav className="navbar">My block
+    <nav className="navbar">
+      <h1>Tweets</h1>
       <div className="links">
         <a href="/">Home</a>
         <a href="/create">New Blog</a>
