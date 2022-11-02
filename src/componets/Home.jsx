@@ -13,6 +13,12 @@ const Home = () => {
     setblogs(newBlogs);
   }
 
+  //Deleting a blog from the list
+  const handleDelete =(id)=>{
+    const newBlogs = blogs.filter(blog =>blog.id !== blog)
+    setblogs(newBlogs);
+  }
+
   return (
      <>
      <BlogList  blogs={blogs} handleDelete={handleDelete}/>
