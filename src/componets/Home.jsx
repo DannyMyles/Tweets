@@ -8,11 +8,6 @@ const Home = () => {
     {title: 'Actas',body: 'Joining the blog', author: 'Maina', id:4}
 
   ]);
-  const handleDelete =(id)=>{
-    const newBlogs = blogs.filter(blog =>blog.id !== blog)
-    setblogs(newBlogs);
-  }
-
   //Deleting a blog from the list
   const handleDelete =(id)=>{
     const newBlogs = blogs.filter(blog =>blog.id !== blog)
