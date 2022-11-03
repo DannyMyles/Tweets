@@ -1,11 +1,11 @@
 
 import BlogList from './BlogList';
 import {useState,useEffect} from 'react'
-const Home = () => {
-  
+
+const Home = () => { 
   // APi
   const url ='http://localhost:4200/blogs'
-  const [blogs, setblogs] = useState([null]);
+  const [blogs, setblogs] = useState([]);
 
   //APi fetch
   useEffect(() => {
